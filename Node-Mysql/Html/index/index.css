@@ -1,0 +1,37 @@
+.select{
+    width: 200px;
+    height:30px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 20px;
+    margin: 10px;
+}
+.button{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: orange;
+    color:white;
+    margin-top: 10px;
+}
+.area1{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border-width: 1px;
+    border: solid grey;
+    border-radius: 10px;
+    padding-left: 175px;
+}
+.dateSelector{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+label{
+    font-size: 20px;
+    left: 100px;
+}

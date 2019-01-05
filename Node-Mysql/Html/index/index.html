@@ -1,0 +1,23 @@
+
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" href="index.css" type="text/css">
+<div class="area1">
+<label>出发地</label>
+<select id='startStation' class="select">
+  <option value ="北京" selected="true">北京</option>
+  <option value ="上海">上海</option>
+  <option value="福州">福州</option>
+  <option value="厦门">厦门</option>
+</select><br>
+<label>目的地</label>
+<select id='endStation' class="select">
+  <option value ="北京">北京</option>
+  <option value ="上海" selected="true">上海</option>
+  <option value="福州">福州</option>
+  <option value="厦门">厦门</option>
+</select><br>
+<label>出发时间</label>
+<input type="date" class="dateSelector" id="startDate"/><br>
+<button type="button" onclick="navtoSearch()" class="button">查询</button><br>
+<label id="demo">111</label>
+</div>
