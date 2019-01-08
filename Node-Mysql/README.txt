@@ -1,1 +1,0 @@
-this repo is building for learning some nodejs and mysql skill
