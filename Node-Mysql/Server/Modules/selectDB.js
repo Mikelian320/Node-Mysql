@@ -1,12 +1,13 @@
 var mysql = require('mysql');
+var interface= require('./interface');
 module.exports={
 	selectData:function(operateData,recall) {
 		var connection = mysql.createConnection({
-			host:'loacalhost',
-			user:'lian',
-			password:'123456',
-			port:'3306',
-			database:'test',
+			host:interface.SQL.host,
+			user:interface.SQL.user,
+			password:interface.SQL.password,
+			port:interface.SQL.port,
+			database:interface.SQL.database,
 		});
 		connection.connect();
         var sql ="SELECT * FROM trainList WHERE startStation LIKE ? And endStation LIKE ?";
@@ -19,7 +20,7 @@ module.exports={
 			console.log('------------------SELECT-------------------');
 			console.log(result);
             console.log('-------------------------------------------');
-            recall(result);
+            recall(JSON.stringify(result));
 		});
 		connection.end();
 	}
